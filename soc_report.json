@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-03-22T08:51:04.196042",
+  "total_events": 23,
+  "total_alerts": 5,
+  "severity_breakdown": {
+    "HIGH": 10,
+    "LOW": 11,
+    "MEDIUM": 1,
+    "CRITICAL": 1
+  },
+  "alerts": [
+    {
+      "alert_type": "BRUTE_FORCE",
+      "severity": "CRITICAL",
+      "description": "Brute force attack detected: 8 failed logins",
+      "username": "Multiple",
+      "source_ip": "203.0.113.42",
+      "event_count": 8,
+      "first_seen": "2024-03-15T08:00:00",
+      "last_seen": "2024-03-15T08:14:00"
+    },
+    {
+      "alert_type": "PRIVILEGE_ESCALATION",
+      "severity": "CRITICAL",
+      "description": "Privilege escalation detected after failed login attempts",
+      "username": "admin",
+      "source_ip": "203.0.113.42",
+      "event_count": 1,
+      "first_seen": "2024-03-15T08:21:00",
+      "last_seen": "2024-03-15T08:21:00"
+    },
+    {
+      "alert_type": "LOG_CLEARED",
+      "severity": "CRITICAL",
+      "description": "Security audit log was cleared - possible cover-up attempt",
+      "username": "admin",
+      "source_ip": "-",
+      "event_count": 1,
+      "first_seen": "2024-03-15T08:25:00",
+      "last_seen": "2024-03-15T08:25:00"
+    },
+    {
+      "alert_type": "SUSPICIOUS_PROCESS",
+      "severity": "HIGH",
+      "description": "Suspicious process launched: powershell.exe",
+      "username": "admin",
+      "source_ip": "-",
+      "event_count": 1,
+      "first_seen": "2024-03-15T08:22:00",
+      "last_seen": "2024-03-15T08:22:00"
+    },
+    {
+      "alert_type": "SUSPICIOUS_USER_CREATION",
+      "severity": "HIGH",
+      "description": "New user 'backdoor_user' created from external IP",
+      "username": "backdoor_user",
+      "source_ip": "203.0.113.42",
+      "event_count": 1,
+      "first_seen": "2024-03-15T10:05:00",
+      "last_seen": "2024-03-15T10:05:00"
+    }
+  ]
+}
